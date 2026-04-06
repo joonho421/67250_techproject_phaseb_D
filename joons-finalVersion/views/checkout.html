@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Joon Ho Song">
+    <meta name="keywords" content="Museum checkout, MonoMuse tickets">
+    <meta name="description" content="Checkout for MonoMuse tickets">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MonoMuse | Checkout</title>
+
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="../static/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <a href="../index.html" class="logo-link">
+                <img id="logo" src="../static/MonoMuse logo .png" alt="MonoMuse logo">
+            </a>
+        </header>
+
+        <nav class="nav_bar" id="myNav">
+            <a href="../index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="exhibitions.html">Exhibitions</a>
+            <a href="tickets.html">Tickets</a>
+            <a href="checkout.html">Checkout</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleNav()">☰</a>
+        </nav>
+
+        <main class="main page-card">
+            <h1>Checkout</h1>
+            <p class="lead">Complete the form below to reserve your visit.</p>
+
+            <form class="checkout-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="quantity">Ticket Quantity</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="10" required>
+
+                <label for="ticketType">Ticket Type</label>
+                <select id="ticketType" name="ticketType" required>
+                    <option value="">Select an option</option>
+                    <option value="General">General</option>
+                    <option value="Student">Student</option>
+                    <option value="Member">Member</option>
+                </select>
+
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+
+        <footer class="footer">
+            <p id="copyYear"></p>
+        </footer>
+    </div>
+</body>
+</html>
