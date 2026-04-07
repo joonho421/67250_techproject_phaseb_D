@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Joon Ho Song">
+    <meta name="keywords" content="Museum, exhibitions, art, technology">
+    <meta name="description" content="Exhibitions at MonoMuse">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MonoMuse | Exhibitions</title>
+
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="../static/script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <a href="../index.html" class="logo-link">
+                <img id="logo" src="../static/MonoMuse logo .png" alt="MonoMuse logo">
+            </a>
+        </header>
+
+        <nav class="nav_bar" id="myNav">
+            <a href="../index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="exhibitions.html">Exhibitions</a>
+            <a href="tickets.html">Tickets</a>
+            <a href="checkout.html">Checkout</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleNav()">☰</a>
+        </nav>
+
+        <main class="main page-card">
+            <h1>Current Exhibitions</h1>
+
+            <section class="exhibit-card">
+                <h2>Digital Dreams</h2>
+                <p>
+                    Digital Dreams explores how artists use artificial intelligence, projection,
+                    and generative tools to create new forms of digital expression and immersive
+                    visual experiences.
+                </p>
+                <img src="../static/Digital dreams at MonoMuse exhibit.png" alt="Digital Dreams" class="exhibit-img">
+            </section>
+
+            <section class="exhibit-card">
+                <h2>Code and Canvas</h2>
+                <p>
+                    Code and Canvas highlights the creative side of programming by showcasing
+                    installations, interactive pieces, and digital artworks that combine
+                    computation with artistic design.
+                </p>
+                <img src="../static/Immersive Code and Canvas exhibit.png" alt="Code and Canvas exhibition" class="exhibit-img">
+            </section>
+
+            <section class="exhibit-card">
+                <h2>Future Frequencies</h2>
+                <p>
+                    Future Frequencies examines how sound, motion, and responsive media can shape
+                    emotional and sensory museum experiences.
+                </p>
+                <img src="../static/Futuristic nightclub vibes and neon lights (1).png" alt="Future Frequencies exhibition" class="exhibit-img">
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p id="copyYear"></p>
+        </footer>
+    </div>
+</body>
+</html>
