@@ -164,17 +164,3 @@ function initMap() {
     });
 }
 
-
-$(document).ready(function () {
-    $("#readMore").click(function () {
-        $("#longIntro").slideDown();
-        $("#readMore").hide();
-        $("#readLess").show();
-    });
-
-    $("#readLess").click(function () {
-        $("#longIntro").slideUp();
-        $("#readLess").hide();
-        $("#readMore").show();
-    });
-});
