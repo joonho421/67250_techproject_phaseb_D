@@ -83,7 +83,7 @@ function setupPurchaseForm() {
             return;
         }
 
-        alert(`Thank you, ${buyerName}! Your ticket request for ${selectedDate} has been submitted.`);
+        alert(`Thank you, ${buyerName}! This demo recorded your ticket request for ${selectedDate} in this browser only. No reservation was made.`);
         purchaseForm.reset();
         purchaseForm.style.display = "none";
     });
@@ -121,7 +121,7 @@ function setupCheckoutForm() {
             return;
         }
 
-        alert(`Thank you, ${name}! Your checkout for ${quantity} ticket(s) has been received.`);
+        alert(`Thank you, ${name}! This is a demo checkout for ${quantity} ticket(s). No purchase or reservation was made.`);
         checkoutForm.reset();
     });
 }
