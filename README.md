@@ -28,6 +28,9 @@ This is a **front-end prototype**. The forms show a confirmation in the browser;
 
 - `joons-finalVersion/` — the version to review
 - `joons-increment1/` through `joons-increment5/` — earlier project milestones
+- [`people-project/`](people-project) — TartanResearch, a separate team project linked to its [original repository](https://github.com/pnimmaga-jpg/67250_peopleproject_team1). Credit belongs to the project team.
+
+To get the team project's files when cloning, run `git clone --recurse-submodules https://github.com/joonho421/67250_techproject_phaseb_D.git`. A regular ZIP download does not include submodule files.
 
 ## Author
 
